@@ -14,6 +14,8 @@ python -c "import platform; print(platform.architecture())"
 #使用清华源安装项目依赖，
 pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
+>出现问题：下载mysqlclient显示缺少mysql.h失败
+>解决方法：将对应版本和位数的whl文件放到项目目录下（该文件已放置到github仓库上）
 
 启动django项目
 ```bash
