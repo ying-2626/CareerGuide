@@ -8,7 +8,7 @@ from django.forms.models import model_to_dict
 from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404
 from django.template.response import TemplateResponse
-from django.utils import six
+import six
 from django.utils.encoding import force_text, smart_text
 from django.utils.safestring import mark_safe
 from django.utils.text import capfirst
@@ -17,6 +17,7 @@ from xadmin.layout import Field, render_field
 from xadmin.plugins.inline import Inline
 from xadmin.plugins.actions import BaseActionView
 from xadmin.plugins.inline import InlineModelAdmin
+from xadmin.sites import site
 from xadmin.sites import site
 from xadmin.util import unquote, quote, model_format_dict, is_related_field2
 from xadmin.views import BaseAdminPlugin, ModelAdminView, CreateAdminView, UpdateAdminView, DetailAdminView, ModelFormAdminView, DeleteAdminView, ListAdminView
